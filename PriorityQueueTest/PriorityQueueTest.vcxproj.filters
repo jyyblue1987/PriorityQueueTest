@@ -26,10 +26,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PrimaryQueue.cpp">
+    <ClCompile Include="PriorityNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PriorityNode.cpp">
+    <ClCompile Include="PriorityQueue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
