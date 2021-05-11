@@ -13,15 +13,15 @@ PriorityQueue<ItemType>::PriorityQueue(const PriorityQueue<ItemType>& a_priority
 	back_ = front_ = NULL;
 	item_count = 0;
 
-	PriorityNode<ItemType> *p = a_priority_queue._front;
+	PriorityNode<ItemType> *p = a_priority_queue.getFrontPtr();
 
 	while (p != NULL)
 	{
-		PriorityNode<ItemType> *n = new PriorityNode(p.item_, p.pri);
+		PriorityNode<ItemType> *n = new PriorityNode<ItemType>(p->getItem(), p->getPriority());
 		if (back_ == NULL)
 			front_ = n;						
 		else
-			back_->next_ = n;			
+			back_->setNext(n);			
 		
 		back_ = n;
 		item_count++;
